@@ -4,6 +4,14 @@
 
 Before the 1980’s audio processing was almost exclusively done manually or with hardware.  If you wanted to play something in reverse, say backward masking on a song, you literally had to play the tape backwards and record it. Reverb and echo were either accomplished by careful studio manipulation or with sound pedals and effects racks.
 
+A pure tone is represented by a sine wave.  Each point on the wave has two values -  a height and point in time.  The height represents the volume. The distance between peaks is the tonal frequency or pitch.
+
+Take a group of musicians as an example, and put a microphone in front of them.  The recording won't be a perfect wave but will isntead be a series of peaks, valleys, and squiggles.
+
+In the days of analog tapes they used magnetized bits of metal to capture the sound.  If there is no sound to capture the head still passes over the bits of metal.  That's tape noise.
+
+Digital recording with a program takes samples of the sound and asks questions to determine the samples value at any given moment.  It first asks if the above the halfway point.  If so it records a '1'. It will then cut the value in half and ask again.  Above is 1 and below is 0.  It continues on until it arrives at a value.  CD quality sound is 16 bits which means the program asks 16 questions to come up with a 16 but binary number (a series of 1s and 0s).  24 bit programs ask 24 questions which makes it 256 times more accurate....you can do the math.
+
 ## Late 1980's
 
 By the late 1980’s personal computers like those produced by Apple had the power capable of handling some more advanced digital audio editing chores.  An early example of this was MacroMedia’s SoundEdit
