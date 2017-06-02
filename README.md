@@ -1,109 +1,143 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Talk Template
+# Python Intoduction with Micaela
 
-Use this template to structure your READMEs for talks. Remove text from this
-section, or use it to frame the talk you are giving. Good framing answers the
-question "Why am I learning this?".
+## Preparation and Tips
 
-Be sure to include a recent [`LICENSE`](LICENSE) and Markdown linter
-configuration ([`.remarkrc`](.remarkrc)). Also, include an appropriate
-`.gitignore`; these are usually found in specific technology templates, for
-example [js-template](https://www.github.com/ga-wdi-boston/js-template).
-
-## Prerequisites
-
--   Topics with which developers should be familiar with.
--   Prerequisites are "just-in-time", so if I have a prerequisite that mentions
-    Sass, I would **not** need to include CSS as a prerequisite.
--   [Links to previous materials](https://www.github.com/ga-wdi-boston/example)
-    are often useful.
+1.  Fork and clone this repository.
+1.  Take notes as needed.
+1.  Do not be hesitate to ask questions, this is a new language!
 
 ## Objectives
 
 By the end of this, developers should be able to:
 
--   Write objectives that focus on demonstrating knowledge.
--   Write learning objectives that begin with an [imperative
-    verb](https://en.wikipedia.org/wiki/Imperative_mood).
--   Avoid objectives that start with "Use" or "Understand".
--   Rewrite objecives that begin with "Use" by inverting sentence structure.
--   End each objective with a period.
--   Write objectives on the whiteboard so they can be referenced during a talk.
+-   Explain what Python is.
+-   Understand the ways that Python is used.
+-   Compare Ruby to Python.
+-   Name the framework that Python uses.
+-   Understand how to start the Python interpreter.
+-   Write and interpret a few basics in Python.
 
-## Preparation
+## What is Python?
 
-1.  Fork and clone this repository.
- [FAQ](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-1.  Create a new branch, `training`, for your work.
-1.  Checkout to the `training` branch.
-1.  Install dependencies with `npm install`.
+Python is a multi-paradigm programming language - object-oriented programming and structured programming are fully supported, and many of the language features support functional programming.
 
-Better preparation instructions may be found as
-[snippets](https://github.com/ga-wdi-boston/instructors/tree/master/snippets).
+## What is Python used for?
 
-It's a good idea to have students do these steps while you're writing objectives
-on the whiteboard.
+Because it is a general purpose language, Python can be used for many different things, including small, large, online, or offline projects.
 
-## Leading Topic Heading
+Python is commonly used in -
+-   Web Development
+-   Data Analysis
+-   Machine Learning
+-   Computer Vision
+-   Internet of Things With Raspberry Pi
+-   Game Development
+-   Web Scraping
+-   Rapid Prototyping
 
-Here is where the talk begins. If you have not already included framing above,
-it's appropriate to put it here. Link to introductory articles or documentation.
-Motivate the next section.
+A few mordern technologies that use Python -
+-   Instagram
+-   Google
+-   Pinterest
 
-Demos, exercises, and labs are labelled as such, followed by a colon and a
-description of the activity starting with an [imperative
-verb](https://en.wikipedia.org/wiki/Imperative_mood).
+Python also has object oriented access to several different database systems, including SQLAlchemy and SQLObject.
 
-## Demo: Write a Demo
+Here is a list of useful Modules, Packages, and Libraries for Python - [](https://wiki.python.org/moin/UsefulModules#Useful_Modules.2C_Packages_and_Libraries)]
 
-Demos are demonstrations, and developers should give their full attention to
-them. It's a great time for them to take notes about important concepts before
-applying them in an exercise.
+## Python vs Ruby
 
-Demos correspond to the "I do" portion of scaffolding from consultant training.
+### Python
+-   Language - Is direct
+-   Pros - Very easy to learn, diverse community with big ties to Linux and academia
+-   Cons - Often very explicit and inelegant to read
+-   Web Framework - Django
+-   Community - Very stable and diverse, but innovates slower
 
-## Code-Along: Write an Code-Along
+```python
+print "Hello World"
+```
 
-During the code-along, developers should apply concepts covered in the previous
-demo, led by the consultant.
-This is their first chance to generalize concepts introduced. Exercises should
-be very focused, and flow natural into a lab.
+### Ruby
+-   Language - Is magical ~*~
+-   Pros - Tons of out of the box features for web development, quick to embrace new things
+-   Cons - Can be very hard to debug at times
+-   Web Framework - Ruby on Rails
+-   Community - Innovates quicker but causes more things to break and is very web focused
 
-Exercises correspond to the "We do" portion of scaffolding from consultant
-training.
+```ruby
+puts "Hello World"
+```
 
-## Lab: Write a Lab
+These two languages look very similar when being read, yet have distinct differences.
+Both languages use a hash (#) to write comments within the code.
+Ruby requires "end" or "}" to close all of its scopes while Python uses white-space only.
 
-During labs, developers get to demonstrate their understanding of concepts from
-demos and applied knowledge from exercises. Labs are an opportunity for
-developers to build confidence, and also serve as a diagnostic tool for
-consultants to evaluate developer understanding.
+### Lets compare some simple code!
 
-Labs should be timed explicitly using a timer. When estimating the time it will
-take to complete a lab, it is better to overestimate. During labs, consultants
-should circle the room and interact with developers, noting patterns and
-prompting with hints on how to complete the lab. If developers end early, a
-consultant may stop the lab timer. If developers do not finish in time, a
-consultant may give more time at her discretion based on current talk pace, the
-current estimate for the talk, and the importance of completing the lab while
-consultant support is available.
+Both languages can set variables in the same way -
+Just so we can get a taste of how these two languages are different (and similar), lets see if we can reverse the words in this string:
 
-Labs correspond to the "You do" portion of scaffolding from consultant
-training.
+```
+sentence = "backwards is sentence This"
+```
+
+First, lets solve it in Ruby -
+```ruby
+sentence.split.reverse.join ' '
+```
+
+Now, let's check out Python -
+```python
+" ".join(reversed(sentence.split()))
+```
+
+Let's share thoughts on the similarities and differences.
+
+## Starting Out With Python
+
+We have -
+-   Variables - store values for later use. You can reassign variables in Python.
+-   Data Types - such as numbers, booleans, and strings (you can create strings with double, single quotes, or str(examplestring)).
+-   Arithmetic Operations - including +, -, *, /, **, and %. You can incorporate other data types in mathematics operations when it comes to Python. For example, you could multiply a string by a number.
+-   Basic String Methods - len(), lower(), upper(), str()
+-   Comparators - Equal to ( == ), not equal to ( != ), less than ( < ), less than or equal to ( <= ), greater than ( > ), greater than or equal to ( >= ).
+-   Whitespace - seperates statements in Python.
+-   Comments - Initiated with a hash, can be used to make code easier to read. If you want to create a multi-line comment, you can include a whole block in a set of tripple quoation marks.
+
+
+## Demonstration/Code-Along
+
+Feel free to code along in your terminal while I go over a few of the basics above. Type "python" to start. If you would like additional info about what the Python interpreter can do, just type "help". If you wish to exit python, type "quit()".
+
+Next - Let's show a little bit of source control using Python. This is a little more advanced than the basics that we are have covered, but some of this might look familiar to you. Let's try it out! Take note of the whitespace, indentation, and the 'if, elif, else' statement. What do you expect to happen when we run this code?
+
+```python
+def classroom():
+    print "It is 9:00 AM!"
+    print "Do you enter the classroom on the left or go straight to get a last minute cup of coffee?"
+    answer = raw_input("Type left or straight and hit 'Enter'.").lower()
+    if answer == "left" or answer == "l":
+        print "You are on time! Good Job!"
+    elif answer == "straight" or answer == "s":
+        print "LATELATELATELATE"
+    else:
+        print "Why didn't you pick anything? Let's try again."
+        classroom()
+
+classroom()
+```
+
+## Lab (Optional)
+
+Practice setting and reassigning variables, using different string methods, comparators, and arithmetic equations with proper syntax in Python.
+
+Bonus - Build your own version of the source control function from the demonstration. Get creative with it!
 
 ## Additional Resources
 
--   Any useful links should be included in the talk material where the link is
-    first referenced.
--   Additional links for further study or exploration are appropriate in this
-    section.
--   Links to important parts of documentation not covered during the talk, or
-    tools tangentially used but not part of the focus of the talk, are also
-    appropriate.
-
-## [License](LICENSE)
-
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
+-   Code Academy - Python - [](https://www.codecademy.com/courses/python-beginner)
+-   Docs - [](https://docs.python.org/3/)
+-   [](https://www.python.org/)
+-   Codewars is helpful with learning Python.
