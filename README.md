@@ -1,106 +1,56 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Talk Template
+# Audio Processing
 
-Use this template to structure your READMEs for talks. Remove text from this
-section, or use it to frame the talk you are giving. Good framing answers the
-question "Why am I learning this?".
+Before the 1980’s audio processing was almost exclusively done manually or with hardware.  If you wanted to play something in reverse, say backward masking on a song, you literally had to play the tape backwards and record it. Reverb and echo were either accomplished by careful studio manipulation or with sound pedals and effects racks.
 
-Be sure to include a recent [`LICENSE`](LICENSE) and Markdown linter
-configuration ([`.remarkrc`](.remarkrc)). Also, include an appropriate
-`.gitignore`; these are usually found in specific technology templates, for
-example [js-template](https://www.github.com/ga-wdi-boston/js-template).
+A pure tone is represented by a sine wave.  Each point on the wave has two values -  a height and point in time.  The height represents the volume. The distance between peaks is the tonal frequency or pitch.
 
-## Prerequisites
+Take a group of musicians as an example, and put a microphone in front of them.  The recording won't be a perfect wave but will isntead be a series of peaks, valleys, and squiggles.
 
--   Topics with which developers should be familiar with.
--   Prerequisites are "just-in-time", so if I have a prerequisite that mentions
-    Sass, I would **not** need to include CSS as a prerequisite.
--   [Links to previous materials](https://www.github.com/ga-wdi-boston/example)
-    are often useful.
+In the days of analog tapes they used magnetized bits of metal to capture the sound.  If there is no sound to capture the head still passes over the bits of metal.  That's tape noise.
 
-## Objectives
+Digital recording with a program takes samples of the sound and asks questions to determine the samples value at any given moment.  It first asks if the above the halfway point.  If so it records a '1'. It will then cut the value in half and ask again.  Above is 1 and below is 0.  It continues on until it arrives at a value.  CD quality sound is 16 bits which means the program asks 16 questions to come up with a 16 but binary number (a series of 1s and 0s).  24 bit programs ask 24 questions which makes it 256 times more accurate....you can do the math.
 
-By the end of this, developers should be able to:
+## Late 1980's
 
--   Write objectives that focus on demonstrating knowledge.
--   Write learning objectives that begin with an [imperative
-    verb](https://en.wikipedia.org/wiki/Imperative_mood).
--   Avoid objectives that start with "Use" or "Understand".
--   Rewrite objecives that begin with "Use" by inverting sentence structure.
--   End each objective with a period.
--   Write objectives on the whiteboard so they can be referenced during a talk.
+By the late 1980’s personal computers like those produced by Apple had the power capable of handling some more advanced digital audio editing chores.  An early example of this was MacroMedia’s SoundEdit
 
-## Preparation
 
-1.  Fork and clone this repository.
- [FAQ](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-1.  Create a new branch, `training`, for your work.
-1.  Checkout to the `training` branch.
-1.  Install dependencies with `npm install`.
+## Digital Studios
 
-Better preparation instructions may be found as
-[snippets](https://github.com/ga-wdi-boston/instructors/tree/master/snippets).
+When Pro Tools was released it kicked off a digital studio trend that quickly evolved to become almost standard.
 
-It's a good idea to have students do these steps while you're writing objectives
-on the whiteboard.
+The true magic comes with audio processing.   I’m going to focus on a local audio tech company from Cambridge called iZotope.  iZotope as a company launched in 2001.
 
-## Leading Topic Heading
 
-Here is where the talk begins. If you have not already included framing above,
-it's appropriate to put it here. Link to introductory articles or documentation.
-Motivate the next section.
+## iZotope
 
-Demos, exercises, and labs are labelled as such, followed by a colon and a
-description of the activity starting with an [imperative
-verb](https://en.wikipedia.org/wiki/Imperative_mood).
+iZotope has fast made a name for itself with products used to produce music, audio, film, and TV productions.  I personally use the RX5 audio editing software for everything now.
 
-## Demo: Write a Demo
+The RX5 Audio Editor has been used to edit the sound on GOT, Mad Men, Star Wars, Daredevil and many of the Marvel movies.  In 2013 they won an Emmy Award for Outstanding Achievement in Engineering Development. What they really excel at is removing audio.
 
-Demos are demonstrations, and developers should give their full attention to
-them. It's a great time for them to take notes about important concepts before
-applying them in an exercise.
+The Deconstruct Tool (as included in RX5):
 
-Demos correspond to the "I do" portion of scaffolding from consultant training.
+https://www.izotope.com/en/community/blog/tips-tutorials/2016/09/rx-tips-and-tricks-removing-tonal-noise-with-deconstruct.html
 
-## Code-Along: Write an Code-Along
 
-During the code-along, developers should apply concepts covered in the previous
-demo, led by the consultant.
-This is their first chance to generalize concepts introduced. Exercises should
-be very focused, and flow natural into a lab.
+## Voice Manipulation
 
-Exercises correspond to the "We do" portion of scaffolding from consultant
-training.
+There can be a dark side to all of this. With the proliferation and buzz around fake news there are opportunitues to take advantage of the technologies being developed to further this practice.
 
-## Lab: Write a Lab
+There is software being developed by Adobe called VoCo and also Google’s DeepMind Division that can analyze your voice and allow someone to type text which can then be conveyed in your voice. It’s pretty near ready for market.  The goal of the software is  to negate the need to have voiceovers or narration redone.  If there’s a line in a movie that needs to be redone they studio doesn't have to call the actor back - which can be expensive when it comes to studio time.  Now they can use this software to ‘fill in’ for the actor or actress if needed.
 
-During labs, developers get to demonstrate their understanding of concepts from
-demos and applied knowledge from exercises. Labs are an opportunity for
-developers to build confidence, and also serve as a diagnostic tool for
-consultants to evaluate developer understanding.
+http://motherboard.vice.com/read/after-20-minutes-of-listening-new-adobe-tool-can-make-you-say-anything
 
-Labs should be timed explicitly using a timer. When estimating the time it will
-take to complete a lab, it is better to overestimate. During labs, consultants
-should circle the room and interact with developers, noting patterns and
-prompting with hints on how to complete the lab. If developers end early, a
-consultant may stop the lab timer. If developers do not finish in time, a
-consultant may give more time at her discretion based on current talk pace, the
-current estimate for the talk, and the importance of completing the lab while
-consultant support is available.
-
-Labs correspond to the "You do" portion of scaffolding from consultant
-training.
 
 ## Additional Resources
 
--   Any useful links should be included in the talk material where the link is
-    first referenced.
--   Additional links for further study or exploration are appropriate in this
-    section.
--   Links to important parts of documentation not covered during the talk, or
-    tools tangentially used but not part of the focus of the talk, are also
-    appropriate.
+- [iZotope](https://www.izotope.com/)
+- [Techcrunch article on Adobe's VoCo](https://techcrunch.com/2016/11/03/adobes-project-voco-lets-you-edit-speech-as-easily-as-text/)
+- [DeepMind](https://deepmind.com/)
+
+
 
 ## [License](LICENSE)
 
