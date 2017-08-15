@@ -1,51 +1,31 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Talk Template
+# Data Visualization with D3.js
 
-Use this template to structure your READMEs for talks. Remove text from this
-section, or use it to frame the talk you are giving. Good framing answers the
-question "Why am I learning this?".
-
-Be sure to include a recent [`LICENSE`](LICENSE) and Markdown linter
-configuration ([`.remarkrc`](.remarkrc)). Also, include an appropriate
-`.gitignore`; these are usually found in specific technology templates, for
-example [js-template](https://www.github.com/ga-wdi-boston/js-template).
+This talk will cover the basics of data visualization and how it relates
+to web development. It will serve as an introduction to D3.js and SVG and
+how these tools relate to create impressive visualizations from data.
 
 ## Prerequisites
 
--   Topics with which developers should be familiar with.
--   Prerequisites are "just-in-time", so if I have a prerequisite that mentions
-    Sass, I would **not** need to include CSS as a prerequisite.
--   [Links to previous materials](https://www.github.com/ga-wdi-boston/example)
-    are often useful.
+-   HTML
 
 ## Objectives
 
 By the end of this, developers should be able to:
 
--   Write objectives that focus on demonstrating knowledge.
--   Write learning objectives that begin with an [imperative
-    verb](https://en.wikipedia.org/wiki/Imperative_mood).
--   Avoid objectives that start with "Use" or "Understand".
--   Rewrite objecives that begin with "Use" by inverting sentence structure.
--   End each objective with a period.
--   Write objectives on the whiteboard so they can be referenced during a talk.
+-   Explain what data visualization is and why it's an important
+    part of web development.
+-   Define SVG and use it to create basic shapes on a webpage.
+-   Explain the advantages of SVG over bitmap images.
+-   Install D3.js and its related modules to be used in a project.
+-   Explain the basics of data binding.
 
 ## Preparation
 
-1.  Fork and clone this repository.
- [FAQ](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-1.  Create a new branch, `training`, for your work.
-1.  Checkout to the `training` branch.
-1.  Install dependencies with `npm install`.
+1.  Just follow along!
 
-Better preparation instructions may be found as
-[snippets](https://github.com/ga-wdi-boston/instructors/tree/master/snippets).
-
-It's a good idea to have students do these steps while you're writing objectives
-on the whiteboard.
-
-## Leading Topic Heading
+## What is Data Visualization?
 
 Here is where the talk begins. If you have not already included framing above,
 it's appropriate to put it here. Link to introductory articles or documentation.
@@ -55,52 +35,29 @@ Demos, exercises, and labs are labelled as such, followed by a colon and a
 description of the activity starting with an [imperative
 verb](https://en.wikipedia.org/wiki/Imperative_mood).
 
-## Demo: Write a Demo
+## Demo: D3.js Examples
 
-Demos are demonstrations, and developers should give their full attention to
-them. It's a great time for them to take notes about important concepts before
-applying them in an exercise.
+http://mbtaviz.github.io/
 
-Demos correspond to the "I do" portion of scaffolding from consultant training.
+https://piratepeel.github.io/sportskills.html
 
-## Code-Along: Write an Code-Along
+https://www.infino.me/mortality/usmap
 
-During the code-along, developers should apply concepts covered in the previous
-demo, led by the consultant.
-This is their first chance to generalize concepts introduced. Exercises should
-be very focused, and flow natural into a lab.
+## Code-Along: Play with SVG
 
-Exercises correspond to the "We do" portion of scaffolding from consultant
-training.
+https://codepen.io/bleyden92/pen/broQJz
 
-## Lab: Write a Lab
+This CodePen includes the SVG code included in the presentation slides.
 
-During labs, developers get to demonstrate their understanding of concepts from
-demos and applied knowledge from exercises. Labs are an opportunity for
-developers to build confidence, and also serve as a diagnostic tool for
-consultants to evaluate developer understanding.
-
-Labs should be timed explicitly using a timer. When estimating the time it will
-take to complete a lab, it is better to overestimate. During labs, consultants
-should circle the room and interact with developers, noting patterns and
-prompting with hints on how to complete the lab. If developers end early, a
-consultant may stop the lab timer. If developers do not finish in time, a
-consultant may give more time at her discretion based on current talk pace, the
-current estimate for the talk, and the importance of completing the lab while
-consultant support is available.
-
-Labs correspond to the "You do" portion of scaffolding from consultant
-training.
+Add, change, and delete points during this aprt of the talk to get a better
+understanding of how SVG works.
 
 ## Additional Resources
 
--   Any useful links should be included in the talk material where the link is
-    first referenced.
--   Additional links for further study or exploration are appropriate in this
-    section.
--   Links to important parts of documentation not covered during the talk, or
-    tools tangentially used but not part of the focus of the talk, are also
-    appropriate.
+-   [D3.js Website](https://d3js.org/)
+-   [D3.js Documentation Wiki](https://github.com/d3/d3/wiki)
+-   [The Hitchhiker's Guide to D3.js](https://medium.com/@enjalot/the-hitchhikers-guide-to-d3-js-a8552174733a)
+-   [Beginner's Guide to Data Binding in D3.js](https://www.sitepoint.com/a-beginners-guide-to-data-binding-in-d3-js/)
 
 ## [License](LICENSE)
 
